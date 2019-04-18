@@ -14,15 +14,12 @@ import plotly.graph_objs as go
 
 
 df = pd.read_csv(
-    'https://gist.githubusercontent.com/chriddyp/'
-    'c78bf172206ce24f77d6363a2d754b59/raw/'
-    'c353e8ef842413cae56ae3920b8fd78468aa4cb2/'
-    'usa-agricultural-exports-2011.csv')
+    'https://raw.githubusercontent.com/Hira63S/Project-1/master/Income%20percentage.csv')
 
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("Food Product Exports in the United States", style={"textAlign": "center"}),
+    html.H1("What Americans Consumers Spend Their Money On", style={"textAlign": "center"}),
     html.Div([
         html.Div([
             dcc.Dropdown(
